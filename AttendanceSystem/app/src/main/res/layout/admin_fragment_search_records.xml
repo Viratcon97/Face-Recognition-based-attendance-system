@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Fragment_searchRecords">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textINputlayout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/CustomTheme"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+                    android:id="@+id/edittext_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/icon_search_gray"
+                    android:drawablePadding="20dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/edittext_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="5dp"
+                android:editable="false"
+                android:enabled="false"
+                android:hint="Date (Eg. dd-mm-yyyy)"
+                android:inputType="text"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:theme="@style/CustomTheme"
+                android:textColor="@color/black"
+                android:textColorHint="#A9A9A9"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/createaccountbtn_"
+                android:drawableLeft="@drawable/icon_date_white"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/doppio_one"
+                android:padding="10dp"
+                android:text="Set Date"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/createaccountbtn_"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="0dp"
+                android:fontFamily="@font/doppio_one"
+                android:padding="10dp"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Records"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

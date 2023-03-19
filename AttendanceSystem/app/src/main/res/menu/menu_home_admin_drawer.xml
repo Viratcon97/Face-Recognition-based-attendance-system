@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_user_management"
+            android:icon="@drawable/menu_user_management"
+            android:title="User Management" />
+        <item
+            android:id="@+id/nav_operator_management"
+            android:icon="@drawable/menu_operator_management"
+            android:title="Operator Management" />
+        <item
+            android:id="@+id/nav_sms_reports"
+            android:icon="@drawable/menu_sms_reports"
+            android:title="SMS Reports" />
+        <item
+            android:id="@+id/nav_changepin"
+            android:icon="@drawable/menu_change_pin"
+            android:title="Change Pin" />
+
+    </group>
+    <group android:checkableBehavior="single">
+    <item android:title="General" >
+        <menu>
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/menu_about_app"
+                android:title="About iAttendance"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/menu_logout"
+                android:title="Logout"
+                android:checkable="true"/>
+
+        </menu>
+    </item>
+    </group>
+</menu>
